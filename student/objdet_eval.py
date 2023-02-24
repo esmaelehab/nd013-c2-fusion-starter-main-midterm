@@ -63,9 +63,6 @@ def measure_detection_performance(detections, labels, labels_valid, min_iou=0.5)
                 dist_x = box.center_x - x
                 dist_y = box.center_y - y
                 dist_z = box.center_z - z
-                #dist_x = box.center_x - x
-                #dist_y = box.center_y - y
-                #dist_z = box.center_z - z
                 
                 ## step 5 : compute the intersection over union (IOU) between label and detection bounding-box
                 box1_poly = Polygon(box1)
